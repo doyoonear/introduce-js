@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  
+  nav li {
+    font-family: "Josefin Slab", serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    list-style: none;
+    display: block;
+    background-color: #ffd752;
+    position: fixed;
+    border-radius: 100%
+  }
+  
+  nav a:link {
+    text-decoration: none;
+    color: #3c44f4;
+  }
+  
+  nav a:visited {
+    text-decoration: none;
+    color: #3c44f4;
+  }
+  
+  h1{
+    display: inline-block;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+    font-size: 40px;
+    padding-left: 10px;
+  }
+  
+  h2 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  p{
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+  }
+  
+  /* main image stones */
+  .stone_container2{
+    display: flex;
+    max-width: 800px;
+    min-width: 300px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .stone {
+    padding: 10px;
+  }
+  
+  .topimage1, .topimage2, .topimage3, .topimage4, .topimage5, .topimage6{
+    display: none;
+    position: absolute;
+  }
+  
+  .stone1:hover .topimage1{
+    display: inline;
+  }
+  
+  .stone2:hover .topimage2{
+    display: inline;
+  }
+  
+  .stone3:hover .topimage3{
+    display: inline;
+  }
+  
+  .stone4:hover .topimage4{
+    display: inline;
+  }
+  
+  .stone5:hover .topimage5{
+    display: inline;
+  }
+  
+  .stone6:hover .topimage6{
+    display: inline;
+  }
+  
+  /* Slider */
+  .slider {
+    width: 100vw;
+    position: relative;
+  }
+  
+  .slider-item {
+    width: 15vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 100%;
+    background-color: rgba(255 255 255 0);
+    position: fixed;
+    top: 20px;
+    z-index: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transform: translate(10%, 30%);
+  }
+
+  .slider-img {
+    width: 70px;
+  }
+  
+  .showing {
+    z-index: 1;
+    opacity: 1;
+    transform: none;
+  }
+  
+
+  /* Aboutme */
+  .aboutme, .education, .work, .hobby, .contact{
+    padding: 25px 80px;
+  }
+  
+  .aboutme {
+    background-color: #3c44f4;
+    width: 100vw;
+    color: white;
+  }
+  
+  .aboutme p,
+  .education p,
+  .work p {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* Button */
+  .button1 {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo-container {
+    width: 100vw;
+  }
+
+  #photo  {
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* To Do Write a to do 왜 회색인지, input박스 왜 저모양인지  */ 
+  section {
+    background-color: #3c44f4;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .js-toDoList {
+    list-style: none;
+  }
+
+  .js-toDoForm input {
+    border: 1 solid white;
+    background-color: #3c44f4;
+    color: white;
+    font-family: 'Josefin Slab';
+    font-weight: 600;
+    font-size: 2rem;
+    width: 400px;
+    height: 50px;
+  }  
+
+  .js-toDoList button {
+  border: none;
+  margin: 0.2rem;
+}
+
+.js-toDoList span {
+  color: white;
+  font-family: 'Josefin Slab';
+  font-size: 1.5rem;
+}
+
+
+  /* Artwork Section */
+  
+  .artwork_title {
+    padding: 25px 80px;
+  }
+  
+  .gallery {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .education, .work, .artwork {
+    color: #3c44f4;
+  }
+  
+  .hobby {
+    background-color: #3c44f4;
+    width: 100vw;
+    height: 400px;
+    color: white;
+  }
+  
+  /* link hover */
+  .hobby a:link, .hobby a:visited,
+  .aboutme a:link, .aboutme a:visited  {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hobby a:hover, .aboutme a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ffd752;
+  }
+  
+  .artwork a:link, .artwork a:visited {
+     color: #3c44f4;
+     text-decoration: none;
+   }
+  
+  .artwork a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ffd752;
+  }
+  
+  /* contact */
+  .contact {
+    background-color: #3c44f4;
+    width: 100vw;
+    height: 600px;
+    color: white;
+  }
+  
+  .contact p {
+    display: inline;
+  }
+  
+  .username {
+    padding-top: 30px;
+  }
+  
+  .request {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .request p {
+    padding-right: 30px;
+  }
+  
+  .submit {
+    padding-top: 15px;
+  }
+  
