@@ -49,7 +49,6 @@
   
   /* main image stones */
 
-
   .stone_container2{
     display: flex;
     max-width: 800px;
@@ -147,27 +146,63 @@
     margin: 0 auto;
   }
   
-  /* Button */
+  /* Button, Photo */
   .photo-container {
     width: 100vw;
   }
 
-  .button-photo {
-    width: 200px;
-    height: 100px;
+  #open {
+    all: unset;
+    border-radius: 100%;
+    background-color: #3c44f4;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Josefin Slab';
+    font-size: 1.3rem;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal__overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .modal__content {
     position: relative;
-    top: 250px;
-    left: 250px;
+    top: 0px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: white;
+    padding: 50px 100px;
+
+  }
+
+  .hidden {
+    display: none;
   }
 
   #photo  {
-    width: 500px;
+    width: 350px;
     height: auto;
     display: flex;
     justify-content: center;
   }
+  
 
-  /* To Do Write a to do 왜 회색인지, input박스 왜 저모양인지  */ 
+  /* To-Do List */ 
   section {
     background-color: #3c44f4;
     height: 400px;
