@@ -48,10 +48,13 @@
   }
   
   /* main image stones */
+
+
   .stone_container2{
     display: flex;
     max-width: 800px;
     min-width: 300px;
+    max-height: 600px;
     height: 250px;
     justify-content: center;
     align-items: center;
