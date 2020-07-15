@@ -145,15 +145,16 @@
   }
   
   /* Button */
-  .button1 {
-    width: 300px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-  }
-
   .photo-container {
     width: 100vw;
+  }
+
+  .button-photo {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: 250px;
+    left: 250px;
   }
 
   #photo  {
@@ -176,25 +177,37 @@
   }
 
   .js-toDoForm input {
-    border: 1 solid white;
-    background-color: #3c44f4;
-    color: white;
+    border: none;
+    background-color: white;
     font-family: 'Josefin Slab';
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.8rem;
     width: 400px;
     height: 50px;
   }  
 
-  .js-toDoList button {
-  border: none;
-  margin: 0.2rem;
-}
+  input::placeholder {
+    color: #3c44f4;
+  }
 
-.js-toDoList span {
+  .js-toDoList button {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  margin: 0.4rem 0.8rem;
+  background-color:  #3c44f4;
+  cursor: pointer;
+}
+  .js-toDoList button:hover {
+    background-color: white;
+    border-radius: 100%;
+  }
+
+
+  .js-toDoList span {
   color: white;
   font-family: 'Josefin Slab';
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 
